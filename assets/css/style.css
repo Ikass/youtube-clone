@@ -31,6 +31,10 @@ body {
     padding: 20px;
 }
 
+#user {
+    height: 32px;
+    border-radius: 50%;
+}
 
 /* Main content */
 
