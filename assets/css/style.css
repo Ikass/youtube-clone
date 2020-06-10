@@ -1,6 +1,13 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .container {
     width: 100%;
 }
+
+
+/* Navigation */
 
 .header {
     background-color: white;
@@ -11,7 +18,8 @@
 }
 
 .header input {
-    flex-grow: 1;
+    width: 30%;
+    padding: 8px;
 }
 
 .header img {
@@ -19,19 +27,48 @@
     height: 20px;
 }
 
+.header a {
+    padding: 20px;
+}
+
+
+/* Main content */
+
 .content {
     background-color: grey;
     display: flex;
+    flex-wrap: wrap;
     padding: 20px;
 }
+
+/* Video player */
 
 .player {
     background-color: khaki;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
-    width: 70%;
+    margin: 20px;
+    flex-basis: 55%;
 }
+
+/* Sidebar */
 
 .sidebar {
     background-color: darkgoldenrod;
-    width: 30%;
+    flex-basis: 25%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-card {
+    background-color: #fff;
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.sidebar-card img {
+    width: 170px;
 }
