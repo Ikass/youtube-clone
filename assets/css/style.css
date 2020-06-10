@@ -42,6 +42,7 @@ body {
     background-color: rgba(0,0,0,.1);
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     flex-grow: 1;
 }
 
@@ -95,4 +96,5 @@ body {
 
 .sidebar-card img {
     width: 170px;
+    height: 94px;
 }
