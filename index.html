@@ -5,6 +5,8 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/switch.css">
+        <link rel="stylesheet" href="assets/css/sidebar.css">
         <link rel="icon" href="assets/images/youtube-favicon.png">
         <title>YouTube clone</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,17 +37,34 @@
         </section>
 
         <aside class="sidebar">
+            <div class="sidebar-heading">
+              <p>Up next</p>
+              <!-- Rounded switch -->
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
             <div class="sidebar-card">
                 <img src="assets/images/thumbnails/ffdp.jpg">
-                <p>Five Finger Death Punch - Wrong Side Of Heaven</p>
+                <div class="sidebar-card-text">
+                  <h3>Five Finger Death Punch - Wrong Side Of Heaven</h3>
+                  <p>Five Finger Death Punch <br> 291M views • 5 years ago</p>
+                </div>
             </div>
             <div class="sidebar-card">
                 <img src="assets/images/thumbnails/acdc.jpg">
-                <p>AC/DC - Thunderstruck (Official Video)</p>
+                <div class="sidebar-card-text">
+                <h3>AC/DC - Thunderstruck (Official Video)</h3>
+                <p>AC/DC <br> 742M views • 7 years ago</p>
+                </div>
             </div>
             <div class="sidebar-card">
                 <img src="assets/images/thumbnails/metallica.jpg">
-                <p>Metallica: Nothing Else Matters (Official Music Video)</p>
+                <div class="sidebar-card-text">
+                  <h3>Metallica: Nothing Else Matters (Official Music Video)</h3>
+                  <p>Metallica <br> 778M views • 10 years ago</p>
+                </div>
             </div>
         </aside>
 
