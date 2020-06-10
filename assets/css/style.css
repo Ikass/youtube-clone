@@ -34,29 +34,49 @@ body {
 
 /* Main content */
 
-.content {
-    background-color: grey;
+.main {
+    background-color: rgba(0,0,0,.1);
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
+    flex-grow: 1;
 }
 
-/* Video player */
+/* video section */
 
-.player {
+.content {
     background-color: khaki;
     display: flex;
     flex-direction: column;
-    padding: 20px;
     margin: 20px;
-    flex-basis: 55%;
+    flex-basis: 60%;
 }
+
+/* 
+    Video player, implementation borrowed from CSS-Tricks
+    https://css-tricks.com/fluid-width-video/
+*/
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
 
 /* Sidebar */
 
 .sidebar {
     background-color: darkgoldenrod;
-    flex-basis: 25%;
+    flex-basis: 30%;
     margin: 20px;
     display: flex;
     flex-direction: column;
